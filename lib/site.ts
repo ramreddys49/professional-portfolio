@@ -17,6 +17,7 @@ export const site = {
     "Software engineer specializing in privacy technology, consent management, cross-platform integrations, and privacy-by-design. Explore professional experience and interactive engineering projects.",
   role: "Privacy Engineer | Software Engineer",
   location: "Atlanta, GA",
+  siteUrl: "https://professional-portfolio-orpin-seven.vercel.app",
   eyebrow: "Privacy Engineer · Software Engineer",
   headline: ["Building privacy-conscious", "digital experiences."],
   intro:

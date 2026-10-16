@@ -23,6 +23,7 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.siteUrl),
   title: metadataTitle,
   description: metadataDescription,
   applicationName: site.name,
@@ -36,9 +37,13 @@ export const metadata: Metadata = {
     "Cross-Platform Integrations",
     "Privacy-by-Design",
   ],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: metadataTitle,
     description: metadataDescription,
+    url: "/",
     siteName: site.name,
     locale: "en_US",
     type: "website",
