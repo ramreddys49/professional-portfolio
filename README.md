@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ramnarayan Reddy — Professional Portfolio
 
-## Getting Started
+Personal portfolio for Ramnarayan Reddy, a privacy engineer and software engineer based in Atlanta, GA. The site presents professional experience, technical expertise, and two educational engineering projects.
 
-First, run the development server:
+Live content includes:
+
+- Privacy engineering and consent-management experience
+- Featured educational projects
+- Technical expertise
+- Resume download
+- GitHub, LinkedIn, and email contact links
+
+No backend, database, authentication, or environment variables are required.
+
+## Tech stack
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Lucide React
+
+## Featured projects
+
+Both projects are educational simulations.
+
+### Privacy X-Ray
+
+Interactive privacy engineering lab covering consent management, privacy models, and privacy-by-design concepts.
+
+- Live: [privacy-xray.vercel.app](https://privacy-xray.vercel.app)
+- GitHub: [ramreddys49/privacy-xray](https://github.com/ramreddys49/privacy-xray)
+
+### Feed X-Ray
+
+Interactive recommendation-system simulator covering behavioral signals, ranking explanations, and engineer mode.
+
+- Live: [feed-xray.vercel.app](https://feed-xray.vercel.app)
+- GitHub: [ramreddys49/feed-xray](https://github.com/ramreddys49/feed-xray)
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The resume is served from `public/resume/ramnarayan-reddy.pdf`. Project screenshots live in `public/images/projects/`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build
 
-## Learn More
+```bash
+npm run lint
+npm run build
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+`npm run build` creates a production build. `npm run start` serves that build locally.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Vercel deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This is a standard Next.js app. After the GitHub repository exists:
 
-## Deploy on Vercel
+1. Import the repository in [Vercel](https://vercel.com/new).
+2. Leave the framework preset as **Next.js**.
+3. Do not add environment variables.
+4. Use the default build command (`next build`) and output settings.
+5. Deploy.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+After the first deploy, later pushes to the production branch will update the site automatically.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run lint` | Run ESLint |
+| `npm run build` | Create a production build |
+| `npm run start` | Serve the production build |

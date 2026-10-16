@@ -32,6 +32,19 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+.env.local
+
+# credentials / local secrets
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+
+# editor / temp
+*.swp
+*.swo
+Thumbs.db
 
 # vercel
 .vercel
