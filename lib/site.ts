@@ -33,7 +33,7 @@ export const site = {
   resumeHref: "/resume/ramnarayan-reddy.pdf",
   resumeAvailable: true,
   githubHref: "https://github.com/ramreddys49/",
-  linkedinHref: "https://www.linkedin.com/in/rana92/",
+  linkedinHref: "https://www.linkedin.com/in/ramnarayankag",
   email: "ramnarayanreddyk@gmail.com",
   about: [
     "I'm a privacy engineer and software engineer focused on building reliable, privacy-conscious digital experiences.",
@@ -60,7 +60,7 @@ export const site = {
     },
     {
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/rana92/",
+      href: "https://www.linkedin.com/in/ramnarayankag",
       external: true,
     },
     {
